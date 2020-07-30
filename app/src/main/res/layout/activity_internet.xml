@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/no_internet_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/animated1"/>
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/main_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/capriola"
+        android:gravity="center"
+        android:text="@string/no_internet"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/secondary_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/allerta_stencil"
+        android:gravity="center"
+        android:textSize="16dp"
+        android:text="Possible reasons for 'No Internet Connection' are listed below.Please check your phone settings and correct as suggested."
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/darkGray" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/allerta_stencil"
+            android:text="1. Airplane mode is ON :"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/darkGray" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/allerta_stencil"
+            android:textSize="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Switch OFF airplane mode by clicking on Settings>disable Airplane Mode toggle Button"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/darkGray" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/allerta_stencil"
+            android:text="2. Mobile data is OFF :"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/darkGray" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/allerta_stencil"
+            android:textSize="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Switch ON Mobile data by clicking on Settings>Mobile Data>enable Mobile data"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/darkGray" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/allerta_stencil"
+            android:text="2. Data Roaming is OFF :"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/darkGray" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/allerta_stencil"
+            android:textSize="16dp"
+            android:layout_marginLeft="16dp"
+            android:text="Switch ON Data Roaming by clicking on Settings>Mobile Data Options>enable Data Roaming"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/darkGray" />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/allerta_stencil"
+            android:textSize="16dp"
+            android:gravity="center"
+            android:text="In case settings are already aligned as per the above steps and still you are'nt able to connect to the interner,try restarting your mobile."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/darkGray" />
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/retry_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/retry_button"
+        android:paddingStart="22dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="22dp"
+        android:paddingBottom="4dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/retry"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/blue"
+        android:textStyle="bold" />
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
